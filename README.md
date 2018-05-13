@@ -1,8 +1,8 @@
 # quetes_react
 quêtes react non fil rouge
 
-1 - Création de composant React
-Challenge
+## 1 - Création de composant React
+#### Challenge
 Show me your property
 Utilise le create-react-app pour démarrer un nouveau projet vide.
 Créé un composant Author qui aura une propriété name
@@ -15,8 +15,8 @@ Le composant est dans une classe javascript ES6
 L'appel du composant ressemble à <Author name="Bob" />
 Au clic sur le composant le nom de l'auteur s'affiche
 
-2 - Gestion d'état (state) et de formulaire
-Challenge
+## 2 - Gestion d'état (state) et de formulaire
+#### Challenge
 Password complexity
 Créer un composant Password qui affiche un texte en fonction de la complexité du mot de passe. Ce composant contient un formulaire avec un champ input, un bouton (de type submit) et une zone de texte (pour le texte sur la complexité).
 
@@ -38,8 +38,8 @@ Si le mot de passe est trop faible le formulaire ne s'envoie pas
 Le texte sur la complexité du mot de passe évolue en fonction de ce que tape l'utilisateur
 
 
-3 - Cycle de vie
-Challenge
+## 3 - Cycle de vie
+#### Challenge
 C'est l'histoire de la vie, le cycle éternel !
 Créer un composant React MyTimer qui affiche un timer en navigateur via le state (setInterval toutes les secondes faisant appel à this.setState()) seulement au moment où il est monté et prévient en console à chaque update effectué avec un texte du type : un update a eu lieu.
 
@@ -53,10 +53,10 @@ Critéres de validation
 Le composant écoute le montage du composant
 Le composant écoute la mise à jour du composant
 
-4 - React-Router
-Challenge
+## 4 - React-Router
+#### Challenge
 On the route to React
-Suite à la création d'un projet via le create-react-app, rajoute deux composants (Home, History) ; la navigation devra pouvoir s'effectuer sans rechargement entre ces deux pages. Il y a aura une navigation possible grâce à des liens (à la façon d'une barre de navigation), lorsque que l'URL actuelle coïncide avec le lien du bouton, le lien doit être rouge.
+Suite à la création d'un projet via le create-react-app, rajoute deux composants (Home, History) ; la navigation devra pouvoir s'effectuer sans rechargement entre ces deux pages. Il y a aura une navigation possible grâce à des liens (à la façon d'une barre de navigation), lorsque que l'URL actuelle coïncide avec le lien du bouton, le lien doit être rouge.
 
 Le composant Home affiche Bienvenue sur l'accueil et le composant History affiche Notre histoire.
 
