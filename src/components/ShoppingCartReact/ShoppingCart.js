@@ -38,7 +38,6 @@ class ShoppingCart extends Component {
   		nombreArticle: 0,
   		total: 0
   	};
-    this.addArticle = this.addArticle.bind(this);
   }
 
 	addArticle = (article) => {
@@ -48,8 +47,9 @@ class ShoppingCart extends Component {
     if (find) {
       panier.map(articlePanier => {
         if (articlePanier.id === article.id) {
-          return articlePanier.qty++;
+          articlePanier.qty++;
         }
+        return articlePanier;
       })
     }
     // sinon on l'ajoute
@@ -64,8 +64,9 @@ class ShoppingCart extends Component {
     // on décrémente le stock
     articlesList.map(articleList => {
       if (articleList.id === article.id) {
-        return articleList.stock--;
+        articleList.stock--;
       }
+      return articleList;
     })
     nombreArticle++;
     total += article.prix;
@@ -84,8 +85,9 @@ class ShoppingCart extends Component {
     if (find) {
       panier.map(articlePanier => {
         if (articlePanier.id === article.id) {
-          return articlePanier.qty--;
+          articlePanier.qty--;
         }
+        return articlePanier;
       })
     }
     // sinon on le supprime
@@ -95,8 +97,9 @@ class ShoppingCart extends Component {
     // on incrémente le stock
     articlesList.map(articleList => {
       if (articleList.id === article.id) {
-        return articleList.stock++;
+        articleList.stock++;
       }
+      return articleList;
     })
     nombreArticle--;
     total -= article.prix;

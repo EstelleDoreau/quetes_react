@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ShoppingList from './ShoppingCartRedux/containers/ShoppingList';
-import ProductsList from './ShoppingCartRedux/containers/ProductsList';
-import Cart from './ShoppingCartRedux/components/Cart';
+
+import ShoppingCart from './ShoppingCartRedux/components/ShoppingCart';
 { /*import ShoppingCart from './components/ShoppingCartReact/ShoppingCart';*/}
 { /*import Router from './components/navigation/Router';*/}
 { /*import Author from './components/Author';*/}
@@ -27,14 +26,7 @@ class App extends Component {
         { /*<MyTimer />*/}
         { /*<Router />*/}
 
-        { /*<ShoppingCart />*/}
-
-          <div>
-    				<ProductsList />
-    				<Cart />
-            <ShoppingList />
-    			</div>
-
+        <ShoppingCart />
       </div>
     );
   }
